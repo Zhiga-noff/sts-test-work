@@ -9,5 +9,12 @@
 
   &[data-view-type='grid'] {
     grid-template-columns: repeat(3, 1fr);
+
+    @media screen and (max-width:992px) {
+      li {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
   }
 }

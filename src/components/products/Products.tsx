@@ -1,7 +1,11 @@
-import { FC, useState } from 'react';
-import { EViewType, TViewType } from 'shared/libs/types';
-import styles from './Products.module.scss';
-import { HeaderProducts, ProductsList, SwitcherMode } from 'components/Products/ui';
+import { FC, useState } from "react";
+import { EViewType, TViewType } from "shared/libs/types";
+import styles from "./Products.module.scss";
+import {
+  HeaderProducts,
+  ProductsList,
+  SwitcherMode,
+} from "components/products/ui";
 
 export const Products: FC = () => {
   const [viewType, setViewType] = useState<TViewType>(EViewType.LIST);
