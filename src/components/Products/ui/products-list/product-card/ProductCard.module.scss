@@ -1,0 +1,59 @@
+.ProductCard {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid var(--primary);
+  position: relative;
+  column-gap: 24px;
+
+  &_Image {
+    max-width: 120px;
+    max-height: 120px;
+    object-fit: contain;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &_Title {
+    font-size: 24px;
+    margin-top: 16px;
+  }
+
+  &_Price {
+    font-size: 16px;
+    margin-top: 8px;
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+
+  &__Button {
+  }
+
+  &_Fav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    path {
+      fill: #fff;
+      transition-duration: 0.12s;
+    }
+
+    &[data-is-active='true'] {
+      path {
+        fill: var(--primary);
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.SwitchButton {
+  &[data-is-active='true'] {
+    background-color: var(--primary);
+    color: #fff;
+  }
+}
