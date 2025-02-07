@@ -1,4 +1,4 @@
-import { Products } from 'components/Products/Products';
+import { Products } from "components/products/Products";
 
 export default function App() {
   return <Products />;
